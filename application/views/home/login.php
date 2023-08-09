@@ -6,6 +6,7 @@
                 <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                 <h1 class="fw-bolder">LOGIN</h1>
                 <p class="lead fw-normal text-muted mb-0">Please Login to Access more!</p>
+                
             </div>
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6">
@@ -22,16 +23,16 @@
 
                         <!-- username input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Username..." data-sb-validations="required" name="username" />
-                            <label for="name">Password</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            <input class="form-control" id="name" type="text" placeholder="Username..." name="username" />
+                            <label for="name">Username</label>
+                            <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
 
                         <!-- password input-->
                         <div class="form-floating mb-5">
                             <input class="form-control" id="name" type="password" placeholder="Enter your Password..." data-sb-validations="required" name="password" />
                             <label for="name">Password</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
 
                         <!-- Submit success message-->
@@ -53,11 +54,13 @@
                         <div class="d-none" id="submitErrorMessage">
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
+                        <?= $this->session->flashdata('message'); ?>
                         <!-- Submit Button-->
                         <div class="d-grid">
                             <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>

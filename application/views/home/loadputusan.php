@@ -7,6 +7,22 @@
             <!-- Experience Section-->
             <section>
 
+          
+
+               <!-- Experience Card untuk chart-->
+               <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center mb-4 mb-lg-0">
+                                <div>
+                                    <canvas id="uploadChart"></canvas>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Experience Card 1-->
                 <div class="card shadow border-0 rounded-4 mb-5">
                     <div class="card-body p-5">
