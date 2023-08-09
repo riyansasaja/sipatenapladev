@@ -13,6 +13,7 @@ class Auth extends CI_Controller
     public function index()
     {
 
+        $data['script'] = '';
         if ($this->session->userdata('username')) {
             redirect('forbhp');
         }
@@ -23,7 +24,7 @@ class Auth extends CI_Controller
             # di sini tampilan
             $this->load->view('templateshome/header');
             $this->load->view('home/login');
-            $this->load->view('templateshome/footer');
+            $this->load->view('templateshome/footer', $data);
         } else {
             $this->_login();
         }
@@ -77,8 +78,4 @@ class Auth extends CI_Controller
         // $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You have been logged out!</div>');
         redirect('home');
     }
-
-
-
-
 }

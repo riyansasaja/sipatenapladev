@@ -25,7 +25,7 @@
     <script src="<?= base_url() ?>vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="<?= base_url() ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <!-- coustum script -->
-    <script src="<?= $script ? base_url('assets/js/') . $script : '' ?>"></script>
+    <script src="<?= $script ? base_url('assets/js/') . $script : 'default' ?>"></script>
 
 
 

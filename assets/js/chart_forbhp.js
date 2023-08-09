@@ -9,14 +9,14 @@ const ctx = document.getElementById('uploadChart');
       datasets:[
         {
         label: 'Bitg',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [5, 9, 8, 1, 6, 5, 2],
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
         tension: 0.1
       },
       {
         label: 'Mdo',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [5, 8, 10, 1, 2, 10, 8],
         fill: false,
         borderColor: 'rgb(128, 0, 0)',
         tension: 0.1
@@ -25,58 +25,63 @@ const ctx = document.getElementById('uploadChart');
         label: 'Amrg',
         data: [6, 2, 1, 2, 4, 2, 1],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: 'rgb (115, 255, 216)',
         tension: 0.1
       },
       {
         label: 'Llk',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [4, 2, 2, 4, 5, 8, 8],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#2ef002',
         tension: 0.1
       },
       {
         label: 'Tdo',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [2, 6, 7, 6, 4, 3, 6],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#f07902',
         tension: 0.1
       },
       {
         label: 'Blu',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [4, 2, 2, 4, 7, 8, 4],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#f00289',
         tension: 0.1
       },
       {
         label: 'Ktg',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [6, 4, 6, 8,4, 2, 6],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#b102f0',
         tension: 0.1
       },
       {
         label: 'Bork',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [3, 2, 1, 0, 1, 2, 3],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#0269f0',
         tension: 0.1
       },
       {
         label: 'Thn',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [2, 1, 0, 1, 2, 0, 1],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#02f02e',
         tension: 0.1
       },
       {
         label: 'Tty',
-        data: [5, 8, 10, 1, 22, 10, 8],
+        data: [1, 1, 0, 0, 2, 0, 1],
         fill: false,
-        borderColor: 'rgb(128, 0, 0)',
+        borderColor: '#60768f',
         tension: 0.1
       }
     ]
     }
   });
+
+  $(document).ready(function() {
+    $('#dataTable').DataTable();
+  });
+  

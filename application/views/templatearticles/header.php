@@ -33,7 +33,7 @@
                         <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li> -->
-
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url('user'); ?>">Profile</a></li>
                         <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="<?= $this->session->userdata('username') ? base_url('auth/logout') : base_url('auth') ?>">
                                 <?= $this->session->userdata('username') ? "Logout" : "Login"; ?>
                             </a></li>
