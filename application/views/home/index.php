@@ -13,7 +13,7 @@
                     <h3 class="display-5 fw-bolder"><span class="text-gradient d-inline">SALINAN PUTUSAN</span></h3>
                     <div class="fs-6 fw-light text-muted mb-4">Sudah diapprove dan dapat diundu</div>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="<?= base_url('home/downloadputusan/') ?>">Lihat Salinan Putusan</a>
+                        <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="<?= base_url('login') ?>">Lihat Putusan</a>
                         <!-- <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a> -->
                     </div>
                 </div>
