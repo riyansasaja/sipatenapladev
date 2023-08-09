@@ -16,19 +16,20 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" action="<?= base_url('auth/') ?>" method="POST">
 
-                        <!-- Email address input-->
+
+
+                        <!-- username input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            <input class="form-control" id="name" type="text" placeholder="Username..." data-sb-validations="required" name="username" />
+                            <label for="name">Password</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
                         </div>
 
                         <!-- password input-->
                         <div class="form-floating mb-5">
-                            <input class="form-control" id="name" type="password" placeholder="Enter your Password..." data-sb-validations="required" />
+                            <input class="form-control" id="name" type="password" placeholder="Enter your Password..." data-sb-validations="required" name="password" />
                             <label for="name">Password</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
                         </div>
@@ -53,7 +54,9 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
