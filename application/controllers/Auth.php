@@ -52,6 +52,12 @@ class Auth extends CI_Controller
                     #cek role untuk menentukan halaman
                     if ($user['role_id'] == 1) {
                         redirect('forbhp');
+                    }
+                    if ($user['role_id'] == 2) {
+                        redirect('forpa');
+                    }
+                    if ($user['role_id'] == 3) {
+                        redirect('forpta');
                     } else {
                         redirect('home');
                     }

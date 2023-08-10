@@ -34,6 +34,7 @@
                             <th>Nomor Putusan</th>
                             <th>PA Asal</th>
                             <th>Tanggal Putusan</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tfoot>
@@ -41,42 +42,44 @@
                             <th>Nomor Putusan</th>
                             <th>PA Asal</th>
                             <th>Tanggal Putusan</th>
+                            <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>
                         <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>2011/04/25</td>
+                            <td>23/Pdt.P/2023/PA.Mdo</td>
+                            <td>PA Manado</td>
+                            <td>12/04/2023</td>
+                            <td>
+                                <button class="btn btn-info text-white">Download</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>18/Pdt.P/2023/PA.Btg</td>
+                            <td>PA Bitung</td>
+                            <td>12/02/2023</td>
+                            <td>
+                                <button class="btn btn-info text-white">Download</button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Garrett Winters</td>
-                            <td>Accountant</td>
-                            <td>Tokyo</td>
-                            <td>2011/07/25</td>
+                            <td>29/Pdt.P/2023/PA.Btg</td>
+                            <td>PA Manado</td>
+                            <td>16/03/2023</td>
+                            <td>
+                                <button class="btn btn-info text-white">Download</button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Ashton Cox</td>
-                            <td>Junior Technical Author</td>
-                            <td>San Francisco</td>
-                            <td>2009/01/12</td>
+                            <td>60/Pdt.P/2023/PA.Btg</td>
+                            <td>PA Manado</td>
+                            <td>24/07/2023</td>
+                            <td>
+                                <button class="btn btn-info text-white">Download</button>
+                            </td>
                         </tr>
-                        <tr>
-                            <td>Cedric Kelly</td>
-                            <td>Senior Javascript Developer</td>
-                            <td>Edinburgh</td>
-                            <td>2012/03/29</td>
-                        </tr>
-                        <tr>
-                            <td>Airi Satou</td>
-                            <td>Accountant</td>
-                            <td>2008/11/28</td>
-                        </tr>
-                        <tr>
-                            <td>Brielle Williamson</td>
-                            <td>Integration Specialist</td>
-                            <td>2012/12/02</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
